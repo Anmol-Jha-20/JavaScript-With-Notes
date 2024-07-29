@@ -34,7 +34,7 @@ console.log(stringNumber);
 let str1 = "hello";
 let str2 = " Anmol";
 let str3 = str1 + str2;
-// console.log(str3);
+console.log(str3);
 
 // console.log("1" + 2);      output: 12
 // console.log(1 + "2");       output: 12
