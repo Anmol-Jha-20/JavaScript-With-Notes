@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning DOM</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-black">
+      <!-- <h1 id="title" class="heading">
+        Learning Dom
+      </h1> -->
+      <h1 id="title" class="heading">
+        Learning Dom <span style="display: none">Test Text</span>
+      </h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor sit amets.</p>
+      <input type="password" name="" id="" />
+      <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!--in Browser-->
+<!-- document.getElementById("title");
+document.getElementById("title").id;  
+
+document.getElementById("title").className;   
+
+document.getElementById("title").getAttribute("id");
+
+document.getElementById("title").getAttribute("class"); 
+
+document.getElementById("title").setAttribute("class", "test");  it overides the original class
+
+document.getElementById("title").setAttribute("class", "heading test");
+
+const title=document.getElementById("title");  output: undefined
+
+title;  output: <h1 id=​"title" class=​"heading">​Learning Dom​</h1>​
+
+title.style.backgroundColor="aqua";  output: 'aqua'
+
+title.style.color="green";  output: 'green'
+
+title.style.padding="15px";  output: '15px'
+
+title.style.borderRadius="15px";
+
+title.style.textAlign="center";
+
+
+title.innerText; output: 'Learning Dom'
+title.textContent; output: '\n        Learning Dom Test Text\n      '
+title.innerHTML; output: '\n        Learning Dom <span style="display: none">Test Text</span>\n'
+
+
+document.querySelector("h2"); output: <h2>​Lorem ipsum dolor sit amet consectetur adipisicing.​</h2>​
+document.querySelector("#title"); output: <h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector(".heading"); output: <h1 id=​"title" class=​"heading">​…​</h1>
+document.querySelector('input[type="password"]');
+
+document.querySelector("ul"); output: <ul>​…​</ul>​
+const myUl=document.querySelector("ul"); output: undefined
+myUl; output: <ul>​…​</ul>​
+myUl.querySelector("li"); output: <li>​…​</li>​
+const myLi=myUl.querySelector("li"); output: undefined
+myLi.style.backgroundColor="green"; output: 'green'
+myLi.style.padding="10px"; output: '10px'
+myLi.innerText="Five"; output: 'Five'
+
+const tempLi=document.querySelectorAll("li");  output: undefined
+tempLi;  output: NodeList(3) [li, li, li]
+tempLi.style.backgroundColor="green";  output: VM5006:1 Uncaught TypeError: Cannot set properties of undefined (setting 'backgroundColor')
+    at <anonymous>:1:29
+(anonymous) @ VM5006:1Understand this error
+tempLi[0].style.backgroundColor="green";  output: 'green'
+
+const tempLi=document.querySelectorAll("li"); output: undefined
+tempLi; output: NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+tempLi.forEach((li)=>{
+    li.style.backgroundColor="green";
+})
+    
+document.getElementsByClassName("list-item"); output: HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-itemlength: 4[[Prototype]]: HTMLCollectionitem: ƒ item()length: (...)namedItem: ƒ namedItem()constructor: ƒ HTMLCollection()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "HTMLCollection"get length: ƒ length()[[Prototype]]: Object
+const myArr=document.getElementsByClassName("list-item"); output: undefined
+myArr; output: HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-itemlength: 4[[Prototype]]: HTMLCollectionitem: ƒ item()length: (...)namedItem: ƒ namedItem()constructor: ƒ HTMLCollection()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "HTMLCollection"get length: ƒ length()[[Prototype]]: Object
+const myConvertedArr=Array.from("myArr"); output: undefined
+const myConvertedArr=Array.from(myArr); output: undefined
+myConvertedArr; output: (4) [li.list-item, li.list-item, li.list-item, li.list-item]
+myConvertedArr.forEach(function(li){
+    li.style.color="orange"
+}); output: undefined​-->
